@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: "lexend";
-    src: url(ECOCICLO-main/font/Lexend-VariableFont_wght.ttf);
+    src: url(font/Lexend-VariableFont_wght.ttf);
 }
 
 header {
-    background-image: url(ECOCICLO-main/img/fundo.png);
+    background-image: url(img/fundo.png);
     height: 500px;
     background-size: cover;
     background-position: center;
