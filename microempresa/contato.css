@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3d5;
+}
+
+label{ 
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+input, textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #e88087; 
+    border-radius: 3px; 
+}
+textarea {
+    height: 120px; 
+}
+
+button {
+    background-color: #635063; 
+    color: #fff; 
+    padding: 12px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #947694;
+}
+
+header {
+    background: #e88087;
+    padding: 10px 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav a {
+    color: #f7f3d5;
+    text-decoration: none;
+}
+
+footer {
+    font-family: "Pacifico", cursive;
+    background: #e88087;
+    color: #f7f3d5;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+section {
+    padding: 20px;
+
+}
+
+.principal {
+    width: 100%;
+}
+
+.conteudo {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%; 
+}
+
+.titulo {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    color:#635063;
+    padding: 0px;
+    font-weight: 30;
+}
+
+.mapa {
+    padding: 10px;
+    color: #635063;
+    background-color: #ffdabf;
+    width: 50%;
+    border-radius: 10px;
+}
+
+form {
+    margin: 10px;
+    background-color: #ffdabf; 
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5 px #ffdabf;
+    color: #635063;
+    width: 20%;
+}
+
+.friends {
+    text-align: center;
+    margin: 0;
+    padding: 1;
+}
+
+
+
+

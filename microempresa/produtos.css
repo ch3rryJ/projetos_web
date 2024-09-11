@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3d5;
+}
+
+.produto img {
+    width: 400px;
+}
+
+.produto {
+    width: 400px;
+    background-color: #ffdabf;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+    color:#e88087;
+    padding: 10px;
+    font-weight: 5;
+}
+
+.texto {
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    padding: 5px 7px;
+    color: #635063;
+
+}
+
+button {
+    background-color: #635063; 
+    color: #fff; 
+    padding: 12px 20px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #947694;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav a {
+    color: #f7f3d5;
+    text-decoration: none;
+}
+
+header {
+    background: #e88087;
+    padding: 10px 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer {
+    font-family: "Pacifico", cursive;
+    background: #e88087;
+    color: #f7f3d5;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.friends {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+
+
