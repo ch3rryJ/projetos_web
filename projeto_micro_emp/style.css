@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    
+    font-family: "Pacifico", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3d5;
+}
+
+header {
+    background: #e88087;
+    padding: 10px 20px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.processo img {
+    width: 400px;
+}
+
+.bemVindo {
+    background-color: #ffdabf;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color:#e88087;
+    padding: 40px;
+    font-weight: 50;
+}
+.texto {
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    padding: 5px 7px;
+    color: #635063;
+    background-color: #f7f3d5;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav a {
+    color: #f7f3d5;
+    text-decoration: none;
+}
+
+
+.banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    font-family: "Pacifico", cursive;
+    background: #e88087;
+    color: #f7f3d5;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+.friends {
+    text-align: center;
+    margin: 20px 0;
+}
+
