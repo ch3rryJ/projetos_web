@@ -1,0 +1,101 @@
+body {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(img/fundo.jpg);
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  h2 {
+    color: rgb(112, 68, 31);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  .established {
+    font-style: italic;
+  }
+  
+  .menu {
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: rgb(241, 219, 190);
+    padding: 20px;
+    max-width: 40%;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:-25;
+  }
+
+  hr {
+    height: 2px;
+    background-color: rgb(112, 68, 31);
+    border-color: rgb(112, 68, 31);
+  }
+  
+  .bottom-line {
+    margin-top: 25px;
+  }
+  
+  
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+.dessert {
+    color: rgb(112, 68, 31);
+    margin-top: 5px;
+    font-family: "Sofadi One", system-ui;
+    font-weight: 1000;
+    font-style: normal;
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    width: 25%;
+  }
+
+  .descricao{
+    font-size:13px;
+  }
+
+  
+  /* FOOTER */
+  
+  footer {
+    text-align: center;
+    font-size: 14px;
+  }
+
+ .rodape {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .address {
+    margin-bottom: 5px;
+  }
+ 
