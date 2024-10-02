@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: "Sora", sans-serif;/*Altera o tio da fonte*/
+}
+
+header {
+    width: 100%;
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bg-home {
+    position: relative;
+}
+
+.bg-home::before {
+    content: "";/* deixar o conteúdo vazio*/
+    display: block;/*o conteúdo sera um bloco unico*/
+    position: absolute;/*define a posição da imagem*/
+    background-image: url(img/bg.svg);/*imagem de fundo*/
+    left: 0;/*margem esquerda*/
+    top: 0;/*margem superior*/
+    width: 100%; /*largura de 100% do espaço disponivel*/
+    height: 100%; /*altura de 100% do espaço disponivel*/
+    z-index: -1; /*posicionar a imagem abaixo do logotipo*/
+    background-size: cover; /*aumentar a imagem mantendo sua proporção*/
+    background-repeat: no-repeat; /*não repetir a imagem*/
+}
+
+i {
+    color: #fff;
+}
+
+.cabecalho-botao {
+    color: #fff; /*cor da fonte branca*/
+    border: 1px solid #fff; /*borda de 1px espessura cor branca*/
+    padding: 8px 24px; /*espaçamento interno*/
+    border-radius: 4px; /*arredonda as bordas do botão*/
+    background-color: transparent; /*botão com fundo transparente*/
+    text-decoration: none;/*retira o traço abixo da fonte*/
+}
+
+.cabecalho-botao:hover { /*muda a cor do botão com a ação do mouse*/
+    background-color: rgb(0, 255, 21);
+    border: rgb(0, 255, 34);
+    color: black;
+}
+
+.cabecalho-icones {
+    gap: 14px;/*espaçamem=nto dos itens*/
+    display: flex;/*posicionar icones na horizontal*/
+}
+
+.principal {
+    color: #fff;/*cor da fonte branca*/
+    min-height: 80vh;/*altura mínima do elemento*/
+    display: flex;/*posicionar icones na horizontal*/
+    flex-direction: column;/*posiciona os elementos em uma coluna*/
+    align-items: center;/*cenraliza os itens na vertical*/
+    justify-content: center;/*centraliza os itens na horizontal*/
+    padding: 14px;/*espaçamento interno 14px*/
+}
+
+.principal h1 {
+    text-align: center;/*centraliza na horizontal*/
+    line-height: 150%;/*altura da linha 1,5 vezes o tamanho da fonte*/
+    max-width: 940px;/*lagura maxima de 940px*/
+    font-size: 46px;/*tamanho da fonte*/
+}
+
+.principal p {
+    text-align: center;/*centraliza na horizontal*/
+    margin: 14px 0;
+}
+
+.botao-contato {
+    padding: 14px 28px;/*espaçamento interno acima/abaixo 14px esquerda/ direita 58px*/
+    color: #fff;/*cor da fonte branca*/
+    background-color: #d94140;/*cor de fundo em tom vermelho*/
+    border: 0;/*sem borda*/
+    font-size: 18px;/*tamanho da fonte 18*/
+    text-decoration: none;/*retira o traço abixo da fonte*/
+    font-weight: 600;/*espessura do traço da fonte*/
+}
+
+.botao-contato:hover {/*comportamento do botão quando o mouse passar sobre o botão*/
+    animation: scaleButton 0.8s alternate infinite;/*duração da animação*/
+}
+
+@keyframes scaleButton {/*animação de escala do botão*/
+    form {/*do*/
+        transform: scale(1);/*tamanho original*/
+    }
+    to {/*para*/
+        transform: scale(1.07);/*tamanho 1,07 vezes maior*/
+    }
+}
+
+.sobre {
+    background-color: #06121e;/*altera cor do fundo*/
+    color: #fff;/*cor da fonte branco*/
+}
+
+.sobre-conteudo {
+    display: flex;/*posicionar os ícones na horizontal*/
+    align-items: center;/*cenraliza os itens na vertical*/
+    justify-content: center;/*cenraliza os itens na horizontal*/
+    gap: 14px;/*espaçamento entre os ícones*/
+    padding: 34px 14px 64px 14px;
+}
+
+.sobre-conteudo img{
+    max-width: 570px;/*largura max da img*/
+}
+
+.sobre-conteudo div{
+    flex: 1;
+}
+
+.sobre-conteudo h2 {
+    font-size: 38px;/*tamanho da fonte*/
+    margin-bottom: 24px;/*margem inferior*/
+}
+
+.sobre-conteudo p {
+    margin-bottom: 14px; /*adiciona um espaçamento entre os parágrafos*/
+    line-height: 150%;/*aumenta o espaçamento entre as linhas do parágrafo*/
+}
+
+.servicos {
+    background-color: #fff;/*cor de fundo da seção*/
+    color: #232224;
+    display: flex; /*posicionar icones na horizontal*/
+    flex-direction: column;/*direção/orientação do conteúdo em colunas*/
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.servicos-conteudo h2 {
+    text-transform: uppercase;/*deixa o texto em letras maiúsculas*/
+    text-align: center;/*centraliza o título na horizontal*/
+    font-size: 38px;/*tamanho da fonte do título*/
+    margin-bottom: 14px;/*margem inferior até o próximo parágrafo*/
+}
+
+.servicos-conteudo p {
+    line-height: 150%;/*aumenta o espacamento entre as linhas do parágrafo"*/
+    margin-bottom: 14px;/*"margem inferior até o próximo parágrafo*/
+    text-align: left;/*alinha o texto à esquerda"*/
+    max-width: 788px;/*largura máxima */
+}
+
+.cortes {
+    display: flex;
+    align-items: center;/* centralizada os itens na vertical"*/
+    justify-content: center;/* centraliza os itens na horizontal"*/
+    gap: 16px;/* espaçamento entre os icones*/
+    padding: 44px 34px 44px; /*espaçamento acima epx direita 44px abaixo 34px e esquerda 44px*/ 
+}
+    
+.corte {
+    flex: 1;
+    display: flex;/*posicionar na horizontal"*/
+    flex-direction: column;/*direção/orientação do conteúdo em colunas"*/
+    background-color: #fff;/* cor de fundo da seção*/
+    border-radius: 8px;
+    box-shadow: 0px 1px 17px 4px rgba(0, 0, 0, 0.45); /*sombreamento"*/
+    overflow: hidden;/*cortar o conteudo que ultrapassa o limite do elemento*/
+}
+
+.corte img {
+    width: 100%;/*dimensiona em 100% do espaço*/
+    max-width: 354px;
+    transition: transform 0.2s;/*duração da animação*/
+}
+
+.corte img:hover {/*comportamento da img quando o mouse passar sobre ela*/
+    transform: scale(1.2);/*amplia a img em 1,2 vezes*/
+    z-index: 1;/*organiza a posição da imagem no eixo z (camada da frente)*/
+}
+
+.corte-info {
+    width: 100%;/*dimensiona em 100% do espaço*/
+    display: flex;/*posiciona os elementos na horizontal*/
+    justify-content: space-between; /*adiciona espaçamentos iguais entre os elementos*/
+    padding: 14px;/*espaço interno do elemento*/
+    background-color: #fff; /*cor de fundo*/
+    z-index: 99;/*posiciona a div corte a frente da img*/
+}
+
+.corte-info button{
+    color: #fff;/*cor da fonte branca*/
+    background-color: #d94140;/*cor de fundo em tom de vermelho*/
+    padding: 4px 8px;/*espaçamento interno acima/abaixo 4px a esquerda/direita 8px*/
+    border-radius: 4px;/*arredondamento da borda em 4px*/
+    border: 0;/*sem borda visivel*/
+    cursor: default;/*ponteiro do mouse padrão*/
+}
+
+.rodape {
+    display: flex;
+    align-items: center;/* centralizada os itens na vertical"*/
+    justify-content: center;/* centraliza os itens na horizontal"*/
+    gap: 24px;/* espaçamento entre os icones*/
+    padding: 54px 0; /*espaçamento acima epx direita 54px abaixo 0px esquerda*/ 
+    flex-direction: column;/*direção/orientação do conteúdo em colunas"*/
+    color: #fff;
+}
+
+.rodape h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+}
+
+.rodape-icones {
+    display: flex;
+    gap: 8px;
+    color: #fff;
+}
+
+.endereco {
+    text-align: center;
+}
+
+.endereco a {
+    color: #fff;
+    line-height: 200%;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    width: 100%;
+    height:  100vh;
+    position: relative;
+    background-color: #06121e;
+}
+
