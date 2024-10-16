@@ -1,0 +1,51 @@
+/*zerar margem e espaçamento*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*alterando o tipo e tamanho da fonte*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+/*alterar itens da lista do menu*/
+.menu li {
+    position: relative;/*o item fica posicionado em relação a posição normal*/
+    float: left;/*o item deve flutuar a esquerda em relação ao position*/
+    border: 1px solid #c0c0c0;/*desenha borda de espessura 1px com traço solido cor cinza*/
+    list-style: none;/*apaga o marcador da lista*/
+}
+
+/*alterar a aparencia dos links*/
+.menu li a{
+    text-decoration: none;/*remove o traço abaixo do link*/
+    color: #333;/*altera a cor da fonte do link para preto*/
+    padding: 5px 10px;/*espaçamento interno*/
+    display: block;
+}
+
+/*muda a aparencia doa itens quando o mouse passa sobre eles*/
+.menu li a:hover{
+    background: #333;/*cor de fundo preto*/
+    color: #fff;/*cor da fonte branco*/
+}
+
+/*muda o posicionamoento dos itens do menu e submenu*/
+.menu li ul li{
+    border: 1px solid #c0c0c0;/*exibir borda*/
+    display: block;/*exibição de blocos*/
+    width: 150px;/*largura do bloco*/
+}
+
+.menu li ul{
+    position: absolute;
+    top: 25px;/*distancia do topo*/
+    left: 0;/*zera a distancia a esquerda*/
+    display: none;/*esconde os itens do submenu*/
+}
+
+.menu li:hover ul{
+    display: block;/*exibe os itens do submenu*/
+}
